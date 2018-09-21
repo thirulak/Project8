@@ -90,8 +90,8 @@ public class CatalogActivity extends AppCompatActivity {
                 BookEntry.COLUMN_PRICE
         };
 
-        // Perform an SQLite Query "SELECT * FROM books"
-        // to get a Cursor that contains all rows from the books table.
+        // Perform an SQLite Query "SELECT * FROM Books"
+        // to get a Cursor that contains all rows from the BookEntry table.
         Cursor cursor = db.query (
                 BookEntry.TABLE_NAME,
                 projection,
@@ -101,7 +101,7 @@ public class CatalogActivity extends AppCompatActivity {
                 null,
                 null);
 
-        // Display and log the table info e.g.: "The BookEntry table contains 2 book."
+        // Display and log the table info e.g.: "The Books table contains 2 books."
         TextView displayView = findViewById(R.id.text_view_book);
         @SuppressLint({"StringFormatInvalid", "LocalSuppress"}) String cursorText = getString(R.string.cursor_message, cursor.getCount());
         Log.v("CatalogActivity", cursorText);
@@ -115,7 +115,7 @@ public class CatalogActivity extends AppCompatActivity {
             //
             // In the while loop below, iterate through the rows of the cursor and display
             // the information from each column in this order.
-            displayView.setText("The BookEntry table contains " + cursor.getCount() + " Book.\n\n");
+            displayView.setText("The Books table contains " + cursor.getCount() + " Book.\n\n");
             displayView.append("\n\n" + BookEntry._ID + " - " +
                     BookEntry.COLUMN_PRODUCT_NAME + " - " +
                     BookEntry.COLUMN_PRODUCT_AUTHOR + " - " +
