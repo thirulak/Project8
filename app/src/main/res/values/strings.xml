@@ -36,7 +36,7 @@
         <string name="hint_product_price">Price</string>
 
         <!-- Labels for supplier dropdown [CHAR LIMIT=20] -->
-        <string name="supplier_select">Select Supplier&#8230;</string>
+        <string name="supplier_select" translatable="false">Select Supplier</string>
         <string name="supplier_unknown">N/A</string>
         <string name="supplier_1">Amazon.com</string>
         <string name="supplier_2">Flipkart</string>

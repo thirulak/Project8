@@ -167,12 +167,12 @@ public class CatalogActivity extends AppCompatActivity {
 
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(BookEntry.COLUMN_PRODUCT_NAME, "Imajica");
-        values.put(BookEntry.COLUMN_PRODUCT_AUTHOR, "Clive Barker");
+        values.put(BookEntry.COLUMN_PRODUCT_NAME, "Harrypotter");
+        values.put(BookEntry.COLUMN_PRODUCT_AUTHOR, "J.K.Rowling");
         values.put(BookEntry.COLUMN_SUPPLIER_NAME, BookEntry.SUPPLIER_1);
-        values.put(BookEntry.COLUMN_SUPPLIER_PHONE, "412-777-8988");
-        values.put(BookEntry.COLUMN_QUANTITY, 7);
-        values.put(BookEntry.COLUMN_PRICE, 15);
+        values.put(BookEntry.COLUMN_SUPPLIER_PHONE, "555-777-7788");
+        values.put(BookEntry.COLUMN_QUANTITY, 3);
+        values.put(BookEntry.COLUMN_PRICE, 300);
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
